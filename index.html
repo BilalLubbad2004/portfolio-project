@@ -1,19 +1,144 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>My Personal Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بلال إسماعيل | معرض أعمالي</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-    </nav>
 
-<h1>Combined Portfolio Version</h1>
-    <p>My name is Bilal Lubbad.</p>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">بلال<span>.</span></a>
 
-    <footer>
-        <p>© 2026 Bilal Lubbad. All Rights Reserved.</p>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">من أنا</a></li>
+                <li><a href="#skills">مهاراتي</a></li>
+                <li><a href="#projects">مشاريعي</a></li>
+                <li><a href="blog.html">المدونة</a></li>
+                <li><a href="#contact" class="nav-button">تواصل معي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero-content">
+                <span class="welcome">مرحباً، أهلاً بك في موقعي</span>
+                <h1>أنا بلال إسماعيل<br>
+                    <span>مطور تطبيقات ومهتم بالتقنية</span>
+                </h1>
+                <p>
+                    أعمل على تحويل الأفكار إلى تجارب رقمية بسيطة وعملية،
+                    وأهتم بتطوير تطبيقات الموبايل وتصميم واجهات المستخدم.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">استكشف أعمالي</a>
+                    <a href="#about" class="btn secondary-btn">اكتشف المزيد</a>
+                </div>
+            </div>
+
+            <div class="hero-decoration">
+                <div class="hero-card">
+                    <span class="code-icon">&lt;/&gt;</span>
+                    <h3>Creative Developer</h3>
+                    <p>Building ideas into reality.</p>
+                    <div class="decoration-line"></div>
+                    <span class="small-label">LEARN · CREATE · GROW</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <span class="section-label">تعرف عليّ</span>
+                <h2>من أنا؟</h2>
+                <p class="section-description">
+                    أنا طالب في مجال تطوير تطبيقات الموبايل،
+                    وأسعى إلى تطوير مهاراتي البرمجية والإبداعية باستمرار.
+                    أؤمن أن التعلم المستمر هو الطريق لبناء منتجات رقمية مميزة.
+                </p>
+                <a href="about.html" class="text-link">المزيد عني ←</a>
+            </div>
+        </section>
+
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+                <span class="section-label">ما أتقنه</span>
+                <h2>مهاراتي التقنية</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span>01</span>
+                        <h3>Java</h3>
+                        <p>تطوير البرمجيات والتطبيقات باستخدام Java.</p>
+                    </div>
+                    <div class="skill-card">
+                        <span>02</span>
+                        <h3>Android Studio</h3>
+                        <p>تصميم وتطوير تطبيقات Android.</p>
+                    </div>
+                    <div class="skill-card">
+                        <span>03</span>
+                        <h3>SQL</h3>
+                        <p>إدارة قواعد البيانات والتعامل معها.</p>
+                    </div>
+                    <div class="skill-card">
+                        <span>04</span>
+                        <h3>Figma</h3>
+                        <p>تصميم واجهات وتجارب المستخدم UI/UX.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <span class="section-label">أعمالي</span>
+                <h2>مشاريعي</h2>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <span class="project-number">PROJECT 01</span>
+                        <h3>RecipeVault</h3>
+                        <p>
+                            تطبيق لإدارة الوصفات وتنظيمها،
+                            مع إمكانية حفظ الوصفات وإدارتها.
+                        </p>
+                        <span class="project-tag">Android Development</span>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-number">PROJECT 02</span>
+                        <h3>Personal Portfolio</h3>
+                        <p>
+                            موقعي الشخصي لعرض مهاراتي
+                            ومشاريعي ورحلتي في عالم البرمجة.
+                        </p>
+                        <span class="project-tag">Web Development</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <span class="section-label">لنتواصل</span>
+                <h2>هل لديك فكرة لمشروع؟</h2>
+                <p>يسعدني التعرف على أفكار جديدة وفرص التعاون.</p>
+                <a href="about.html" class="btn primary-btn">تعرف عليّ أكثر</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 بلال إسماعيل. جميع الحقوق محفوظة.</p>
+        </div>
     </footer>
+
 </body>
 </html>
